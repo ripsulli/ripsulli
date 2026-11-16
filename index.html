@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ripsulli</title>
+<meta name="description" content="Vertical edits and notes on how they are made.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%237fb2ff'/><rect x='16' y='0' width='16' height='16' fill='%23d9ebff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home" aria-label="ripsulli home">ripsulli<i>.</i></a>
+  <nav aria-label="Main">
+    <a href="#about" data-nav="about">About</a>
+    <a href="#writing" data-nav="writing">Articles</a>
+    <a href="#edits" data-nav="edits">Edits</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+    <a href="#create" data-nav="create" hidden>Create</a>
+  </nav>
+  <button class="icon-btn" id="gsearch-btn" aria-label="Search everything"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button>
+  <button class="icon-btn" id="theme" aria-label="Switch light or dark theme"><span></span></button>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="foot"><p id="foot-copy"></p><p id="foot-note"></p></footer>
+
+<dialog id="player" aria-label="Edit player">
+  <button class="close" id="close" aria-label="Close edit"></button>
+  <div class="frame" id="frame"></div>
+  <h3 id="ptitle"></h3>
+  <p id="pdesc"></p>
+</dialog>
+
+<script src="js/content.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
